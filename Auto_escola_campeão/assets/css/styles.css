@@ -1,0 +1,326 @@
+@font-face {
+  font-family: "Gotham HTF Black";
+  src: url("https://db.onlinewebfonts.com/t/54aae35f49ae2fcd3008531e13737228.eot");
+  src: url("https://db.onlinewebfonts.com/t/54aae35f49ae2fcd3008531e13737228.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/54aae35f49ae2fcd3008531e13737228.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/54aae35f49ae2fcd3008531e13737228.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/54aae35f49ae2fcd3008531e13737228.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/54aae35f49ae2fcd3008531e13737228.svg#Gotham HTF Black")
+      format("svg");
+}
+
+@font-face {
+  font-family: "GothamBook";
+  src: url("https://db.onlinewebfonts.com/t/a9db6cd9116ff56da3875b35444f0c45.eot");
+  src: url("https://db.onlinewebfonts.com/t/a9db6cd9116ff56da3875b35444f0c45.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/a9db6cd9116ff56da3875b35444f0c45.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/a9db6cd9116ff56da3875b35444f0c45.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/a9db6cd9116ff56da3875b35444f0c45.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/a9db6cd9116ff56da3875b35444f0c45.svg#GothamBook")
+      format("svg");
+}
+
+@font-face {
+  font-family: "Gotham-Htf-Condensed-Book";
+  src: url(Auto_escola_campeão\assets\fonts\Gotham-htf-condesend-book);
+}
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+:root {
+  --primary-color: #0a1128;
+  --white-color: #ffffff;
+  --light-gray-color: #eeeeee;
+  --gap: 0.6rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0.02%;
+  font-family: "GothamBook", sans-serif;
+  font-size: 2rem;
+  background-color: white;
+  color: var(--prymary-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Gotham HTF Black", sans-serif;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 5.5rem;
+}
+
+h3 {
+  font-size: 5rem;
+}
+
+h4 {
+  font-size: 4.5rem;
+}
+
+h5 {
+  font-size: 4rem;
+}
+
+h6 {
+  font-size: 3.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-hdr {
+  background-image: url("/Auto_escola_campeão/assets/imgs/header-svg.svg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.main-bg {
+  background-image: url("/Auto_escola_campeão/assets/imgs/main\ background.svg");
+  background-size: cover;
+  background-position: center center;
+  color: white;
+}
+
+.white-bg {
+  background-color: white;
+}
+.gray-bg {
+  background-color: rgb(233, 233, 233);
+  background-image: url("/Auto_escola_campeão/assets/imgs/vanishing-stripes.svg");
+  padding-bottom: 0.2rem;
+}
+
+.main-content {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: var(--gap);
+}
+
+.section {
+  min-height: 100vh;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  border-bottom: 0.1rem solid var(--light-gray-color);
+}
+
+.menu-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu h1 {
+  font-size: 2rem;
+  color: black;
+}
+
+.menu h1 a {
+  color: inherit;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu ul li a {
+  display: block;
+  padding: 0rem 2.2rem 0rem;
+  font-size: 1.8rem;
+  font-family: "Inter";
+  font-weight: 500;
+  color: #0a1128;
+  position: relative;
+}
+
+.menu ul li a::after {
+  content: "";
+  position: absolute;
+  top: 2.5rem;
+  left: 50%;
+  width: 0%;
+  height: 0.3rem;
+  background: aqua;
+  transition: all 300ms ease-in-out;
+}
+
+.menu ul li a:hover::after {
+  left: 15%;
+  width: 70%;
+}
+
+.menu ul li a:hover {
+  color: rgb(0, 107, 107);
+}
+
+.menu-spacing {
+  height: 25rem;
+}
+
+.main-welcome {
+  padding-right: 39%;
+  text-align: center;
+}
+
+/*     ABOUT US       */
+
+.main-about-us {
+  padding-top: 8rem;
+  padding-left: initial;
+  padding-right: initial;
+}
+
+.container-about-us {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column1 {
+  width: 50%; /* Define a largura da primeira coluna */
+  padding: 2rem; /* Adiciona algum espaçamento interno */
+  box-sizing: border-box; /* Garante que o padding seja incluído na largura total */
+}
+
+.column1 h5 {
+  color: rgb(0, 107, 107);
+  text-align: center;
+}
+.column1 h2 {
+  text-align: center;
+}
+.column1 p {
+  font-family: "Inter";
+  font-weight: 400;
+  line-height: 4rem;
+  color: rgb(122, 122, 122);
+  text-align: center;
+}
+
+.column2 {
+  width: 50%; /* Define a largura da segunda coluna */
+  max-width: calc(
+    50% - 4rem
+  ); /* Define uma largura máxima, subtraindo o espaçamento da primeira coluna */
+  padding: 2rem; /* Adiciona algum espaçamento interno */
+  box-sizing: border-box; /* Garante que o padding seja incluído na largura total */
+}
+
+.column2 img {
+  max-width: 100%; /* Garante que a imagem não ultrapasse a largura da coluna */
+  height: auto; /* Mantém a proporção da imagem */
+  display: block; /* Remove espaço extra abaixo da imagem */
+  border: 0.1rem solid var(--light-gray-color);
+}
+
+/*      seção review      */
+.container-review {
+  padding-top: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* Garante que a seção ocupe toda a altura disponível */
+}
+
+.row-stars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+.row-stars img {
+  width: 6rem; /* Define a largura das estrelas */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+.content-box {
+  padding: 0.2rem; /* Espaçamento interno */
+  border-radius: 10rem; /* Borda arredondada */
+  max-width: 60%; /* Largura máxima da caixa */
+}
+
+.title-gray-text {
+  color: white;
+  font-size: 3.5rem; /* Tamanho do texto */
+  text-align: center; /* Centraliza o texto horizontalmente */
+}
+
+.container-single-review {
+  align-self: center;
+  padding: 3% 20% 0 20%;
+}
+.single-review {
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  column-gap: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 31px 40px;
+  margin-bottom: 41px;
+  height: auto;
+}
+
+.author-img {
+  align-self: center;
+  max-width: 100%;
+  border-radius: 50%;
+  width: 25rem;
+  height: 25rem;
+  height: auto;
+}
+
+.author-content {
+}
+
+.quote-mark {
+  margin-bottom: 30px;
+}
+
+.quote {
+  max-width: 100%;
+  font-family: "GothamBook", sans-serif;
+  font-style: italic;
+  height: auto;
+}
+
+.author-name {
+  color: blue;
+}
