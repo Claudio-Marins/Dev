@@ -51,6 +51,8 @@
   --white: #fff;
   --thumb: #edf2f4;
   --gap: 0.6rem;
+  --purple-color: rgb(74, 1, 143);
+  --light-blue-color: rgb(0, 107, 107);
 }
 
 html {
@@ -206,7 +208,7 @@ a {
 /*     ABOUT US       */
 
 .main-about-us {
-  padding-top: 8rem;
+  padding-top: 3rem;
   padding-left: initial;
   padding-right: initial;
 }
@@ -341,8 +343,10 @@ a {
 }
 
 .container-cards h2 {
-  font-size: 32px;
+  font-size: 6rem;
   margin-bottom: 1em;
+  text-align: center;
+  color: var(--light-blue-color);
 }
 
 .container-cards body {
@@ -384,11 +388,14 @@ a {
 
 .card:hover {
   color: var(--white);
-  background: var(--orange);
+  background: rgb(80, 2, 90);
 }
-
+.card:hover .card-title {
+  color: var(--white);
+}
 .card .card-title {
   font-size: 20px;
+  color: var(--light-blue-color);
 }
 
 .card .card-content {
@@ -405,7 +412,7 @@ a {
   display: inline-block;
   text-decoration: none;
   color: white;
-  background: var(--orange);
+  background: var(--light-blue-color);
   padding: 6px 12px;
   border-radius: 8px;
   transition: background 0.2s;
@@ -425,7 +432,7 @@ a {
 }
 
 .cards::-webkit-scrollbar-thumb {
-  background: var(--darkorange);
+  background: var(--light-blue-color);
 }
 
 .cards::-webkit-scrollbar-track {
