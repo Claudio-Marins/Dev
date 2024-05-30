@@ -241,9 +241,7 @@ a {
 
 .column2 {
   width: 50%; /* Define a largura da segunda coluna */
-  max-width: calc(
-    50% - 4rem
-  ); /* Define uma largura máxima, subtraindo o espaçamento da primeira coluna */
+  max-width: 100%; /* Define uma largura máxima, subtraindo o espaçamento da primeira coluna */
   padding: 2rem; /* Adiciona algum espaçamento interno */
   box-sizing: border-box; /* Garante que o padding seja incluído na largura total */
 }
@@ -459,23 +457,38 @@ a {
 .container-form-adress {
   display: flex;
   justify-content: space-between;
-  background-color: whitesmoke;
 }
 
 .column1-form {
   width: 50%; /* Define a largura da primeira coluna */
   padding: 2rem; /* Adiciona algum espaçamento interno */
   box-sizing: border-box;
-  background-color: gray; /* Garante que o padding seja incluído na largura total */
+  background-color: gray;
+  box-sizing: border-box;
+}
+.column1-form .form-grid {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+
+.form-group label {
+  display: block;
+}
+
+.form-group input,
+.form-group textarea {
+  border: none;
+  width: 80%;
 }
 
 .column2-adress {
   width: 50%; /* Define a largura da segunda coluna */
-  max-width: calc(
-    50% - 4rem
-  ); /* Define uma largura máxima, subtraindo o espaçamento da primeira coluna */
   padding: 2rem; /* Adiciona algum espaçamento interno */
   box-sizing: border-box;
+  background-color: whitesmoke;
 }
 
 /* END FORM */
@@ -496,4 +509,37 @@ a {
   }
 }
 
+@media (max-width: 800px) {
+  .main-bg {
+    background-size: 300%;
+  }
+  .main-welcome {
+    padding-right: 0%;
+    text-align: center;
+  }
+  .container-about-us {
+    flex-direction: column;
+  }
+  .column1 {
+    width: 100%;
+  }
+  .column2 {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+  }
+  .container-single-review {
+    align-self: center;
+    padding: 0%;
+  }
+  .container-form-adress {
+    flex-direction: column;
+  }
+  .column1-form {
+    width: 100%;
+  }
+  .column2-adress {
+    width: 100%;
+  }
+}
 /* FIM DO DESING RESPONSIVO */

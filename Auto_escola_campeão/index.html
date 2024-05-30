@@ -40,10 +40,8 @@
         <hr style="max-width: 100%; width: 10%" />
         <h2>Pronto para começar sua aventura na estrada?</h2>
         <p>
-          <span
-            >Ansioso para começar a dirigir? Conte conosco para acompanhá-lo.
-            Agende sua visita agora mesmo.</span
-          >
+          <span>Ansioso para começar a dirigir? Conte conosco para acompanhá-lo.
+            Agende sua visita agora mesmo.</span>
         </p>
       </div>
     </section>
@@ -270,9 +268,36 @@
         <div c>
           <div class="container-form-adress">
             <div class="column1-form">
-              <fieldset>
-                <legend> Converse conosco </legend>initiating
-                iniciando
+              <fieldset class="form-grid">
+            <div class="form-group">
+              <legend> Converse conosco </legend>
+              <label for="name">Nome</label>
+              <input type="text"
+              name="name"
+              id="name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" pattern=".+@example\.com" size="30" required />
+            </div>
+
+            <div class="form-group">
+              <label for="tel">Telefone</label>
+              <input type="tel" id="telefone" placeholder="(XX) XXXXX-XXXX">
+            </div>
+
+
+            <div class="form-group">
+              <label for="message">Mensagem</label>
+              <textarea name="message" cols="30" rows="10"
+              id="message"></textarea>
+            </div>
+
+            <div class="form-group">
+              <button type="submit">
+                Enviar Mensagem
+              </button>
+            </div>
               <h2>
                 Formulário
               </h2>
