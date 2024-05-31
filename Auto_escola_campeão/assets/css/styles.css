@@ -457,14 +457,12 @@ a {
 .container-form-adress {
   display: flex;
   justify-content: space-between;
+  padding-top: 1%;
 }
 
 .column1-form {
   width: 50%; /* Define a largura da primeira coluna */
   padding: 2rem 2rem 2rem 0.5rem; /* Adiciona algum espaçamento interno */
-  box-sizing: border-box;
-  background-color: gray;
-  box-sizing: border-box;
 }
 .column1-form .form-grid {
   border: none;
@@ -472,31 +470,67 @@ a {
   flex-direction: column;
   flex-wrap: wrap;
   gap: var(--gap);
+  height: 90%;
+  border-radius: 2rem;
 }
 .column1-form fieldset {
   background-color: #dd7d25;
-  margin: 2rem 7rem 2rem 0rem;
+  background-image: url("/Auto_escola_campeão/assets/imgs/confetti-doodles.svg");
+  background-size: cover;
+  margin: 1% 7rem 1% 0rem;
+  font-weight: bold;
 }
 
 .form-group label {
   display: block;
 }
-
 .form-group input {
   border: none;
-  width: 80%;
-  height: 60px;
+  width: 90%;
+  height: 10rem;
 }
 .form-group textarea {
-  width: 80%;
-  height: 200px;
+  width: 90%;
+  height: 30rem;
 }
 
 .column2-adress {
   width: 50%; /* Define a largura da segunda coluna */
   padding: 2rem; /* Adiciona algum espaçamento interno */
   box-sizing: border-box;
-  background-color: whitesmoke;
+}
+.column2-adress h2 {
+  padding-left: 10%;
+  padding-bottom: 3%;
+}
+
+.container-info {
+  align-items: center;
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 12% 100%;
+  column-gap: 20px;
+  border-radius: 20px;
+  padding: 0rem 1rem 1rem 1rem;
+  margin-bottom: 41px;
+  height: auto;
+}
+
+.adress-icon img {
+  max-width: 80%;
+  max-height: auto;
+  filter: invert();
+}
+
+.title-adress {
+  font-size: x-large;
+  margin: 0;
+}
+
+.info-adress {
+  padding-right: 20%;
 }
 
 /* END FORM */
@@ -517,7 +551,7 @@ a {
   }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 1050px) {
   .card {
     width: 85%;
   }
@@ -549,6 +583,10 @@ a {
   .column1-form,
   .column2-adress {
     width: 100%;
+  }
+
+  .column1-form fieldset {
+    margin: 0 2%;
   }
 }
 /* FIM DO DESING RESPONSIVO */
